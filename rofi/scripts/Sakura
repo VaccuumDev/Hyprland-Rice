@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r ~/Themes/Sakura/. ~/Themes/Sakura/.zshrc ~/ &&
+wal -b 00000000 -i ~/Wallpaper/120_-_KnFPX73.jpg &&
+qtile cmd-obj -o cmd -f restart 
+

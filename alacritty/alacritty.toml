@@ -1,0 +1,29 @@
+# From: https://github.com/yorickpeterse/Autumn.vim/blob/master/colors/autumn.vim
+
+[colors.primary]
+foreground = "#f3cccc"
+background = "#232323"
+
+[colors.cursor]
+text = "#232323"
+cursor = "#ff2121"
+
+[colors.normal]
+black = "#212121"
+red = "#F05E48"
+green = "#99be70"
+yellow = "#fa6666"
+blue = "#c18686"
+magenta = "#cf8b8b"
+cyan = "#a57272"
+white = "#c8c8c8"
+
+[colors.bright]
+black = "#404040"
+red = "#F05E48"
+green = "#99be70"
+yellow = "#ff9f9f"
+blue = "#c18686"
+magenta = "#8a3b3b"
+cyan = "#a57272"
+white = "#e8e8e8"
