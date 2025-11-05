@@ -1,0 +1,27 @@
+[pyprland]
+plugins = [
+ "expose",
+ "scratchpads",
+]
+[scratchpads.term]
+animation = "fromTop"
+command = "alacritty"
+class = "Alacritty"
+lazy = true
+size = "75% 50%"
+excludes = "*"
+
+[scratchpads.wifi]
+animation = "fromRight"
+command = "/home/vaccuum/nmrs-ui"
+class = "nmrs-ui"
+lazy = true
+size = "20% 50%"
+excludes = "*"
+[scratchpads.walls]
+animation = "fromLeft"
+command = "waypaper"
+class = "waypaper"
+lazy = true
+size = "40% 70%"
+excludes = "*"
