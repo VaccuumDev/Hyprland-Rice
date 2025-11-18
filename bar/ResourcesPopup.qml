@@ -5,13 +5,14 @@ import qs.services
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
+import Qt5Compat.GraphicalEffects
 
 StyledPopup {
     id: root
 
     // Helper function to format KB to GB
     function formatKB(kb) {
-        return (kb / (1024 * 1024)).toFixed(1) + " GB";
+        return (kb / (1024 * 1024)).toFixed(1) + " ГБ";
     }
 
     component ResourceItem: RowLayout {
@@ -79,17 +80,17 @@ StyledPopup {
             ColumnLayout {
                 ResourceItem {
                     icon: "clock_loader_60"
-                    label: Translation.tr("Used:")
+                    label: "Занято:"
                     value: formatKB(ResourceUsage.memoryUsed)
                 }
                 ResourceItem {
                     icon: "check_circle"
-                    label: Translation.tr("Free:")
+                    label: Translation.tr("Осталось:")
                     value: formatKB(ResourceUsage.memoryFree)
                 }
                 ResourceItem {
                     icon: "empty_dashboard"
-                    label: Translation.tr("Total:")
+                    label: Translation.tr("Всего:")
                     value: formatKB(ResourceUsage.memoryTotal)
                 }
             }
@@ -134,7 +135,7 @@ StyledPopup {
             ColumnLayout {
                 ResourceItem {
                     icon: "bolt"
-                    label: Translation.tr("Load:")
+                    label: Translation.tr("Груз:")
                     value: (ResourceUsage.cpuUsage > 0.8 ? Translation.tr("High") : ResourceUsage.cpuUsage > 0.4 ? Translation.tr("Medium") : Translation.tr("Low")) + ` (${Math.round(ResourceUsage.cpuUsage * 100)}%)`
                 }
             }

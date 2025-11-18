@@ -16,7 +16,7 @@ Scope {
     id: bar
     property bool showBarBackground: Config.options.bar.showBackground
 
-    Variants {
+   Variants {
         // For each monitor
         model: {
             const screens = Quickshell.screens;
