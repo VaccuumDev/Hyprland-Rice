@@ -18,6 +18,7 @@ class = "nmrs-ui"
 lazy = true
 size = "20% 50%"
 excludes = "*"
+
 [scratchpads.walls]
 animation = "fromLeft"
 command = "waypaper"
