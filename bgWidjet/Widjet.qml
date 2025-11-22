@@ -4,6 +4,7 @@ import Quickshell.Hyprland
 import Quickshell.Io
 import Quickshell.Services.Mpris
 import Quickshell.Wayland
+import qs.modules.common.widgets
 
 PanelWindow {
     property string music: "Hello, world!"
@@ -18,16 +19,16 @@ PanelWindow {
         bottom: true
     }
 
-    Rectangle {
-        color: "transparent"
+    MergedEdgeRect {
+        color: "green"
         opacity: .5
 
+        //cornerRadius: 40
         anchors {
             fill: parent
             topMargin: 10
             leftMargin: -10
         }
-
         Text {
 
             text: music
